@@ -265,6 +265,7 @@
    /** Wrapper for console.log, let redirect output to specified div element
     * @private */
    JSROOT.console = function(value, divid) {
+    console.log("This is a Test Debug Message");
        console.log(divid);
       if ((typeof divid == 'string') && document.getElementById(divid))
          document.getElementById(divid).innerHTML = value;
